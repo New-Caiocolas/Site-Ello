@@ -14,6 +14,8 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* HEADER */
+
 header{
     display: flex;
     justify-content: space-evenly;
@@ -22,7 +24,21 @@ header{
     box-shadow: 0px 2px 12px 1px rgba(0, 0, 0, 0.1);
 }
 
-header > a > img{
+.hamburguer{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    margin: 5px auto;
+    background-color: #57585A;
+    transition: all 0.3s ease-in-out;
+}
+
+header > div > a > img{
     width: 150px;
     height: 59.71px;
 }
@@ -44,11 +60,13 @@ header > nav > ul > li > a{
     text-decoration: none;
 }
 
-.redes > img{
+.redes > a > img{
     height: 20px;
     width: 20px;
     margin: 0 5px;
 }
+
+/* MAIN */
 
 .informacoes-iniciais{
     background-image: url("painellogo.png");
@@ -57,7 +75,7 @@ header > nav > ul > li > a{
     min-height: 510px;
 }
 
-.informacoes-iniciais > div{
+.informacoes-iniciais > .button{
     display: flex;
     justify-content: center;
     margin: 0 0 0 20em;
@@ -83,7 +101,7 @@ header > nav > ul > li > a{
     cursor: pointer;
 }
 
-main > div > h1{
+.info-text > h1{
     display: flex;
     justify-content: center;
     margin-top: 30px;
@@ -101,7 +119,7 @@ main > div > h1{
     margin: 0 10px;
 }
 
-main > div > p{
+.info-text > p{
     display: flex;
     justify-content: center;
     margin: 10px 43em 20px;
@@ -114,23 +132,152 @@ main > div > p{
 }
 
 @media only screen and (max-width: 1800px) {
-    main > div > p {
+    .info-text > p {
         margin: 10px 35em 20px;
     }
 }
 
 @media only screen and (max-width: 1550px) {
-    main > div > p {
+    .info-text > p {
         margin: 10px 25em 20px;
     }
 }
 
 @media only screen and (max-width: 1150px) {
-    main > div > p {
+    .info-text > p {
         margin: 10px 10em 20px;
     }
 }
 
 @media only screen and (max-width: 840px) {
-    
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        gap: 3em;
+        padding: 0 2em;
+    }
+
+    .navbar{
+        position: fixed;
+    }
+
+    .hamburguer{
+        display: block;
+    }
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburguer.active .bar:nth-child(1){
+     transform: translateY(8px) rotate(45deg);
+     }
+     .hamburguer.active .bar:nth-child(3){
+         transform: translateY(-8px) rotate(-45deg);
+     }
+     .nav-menu{
+         position: fixed;
+         left: -100%;
+         top: 70px;
+         gap: 0;
+         border-radius: 0 0 20px 20px;
+         background-color: rgb(255, 255, 255);
+         text-align: center;
+         flex-direction: column;
+         width: 100%;
+         transition: 0.3s;
+     }
+     .nav-item{
+         padding: 24px 0;
+         border-bottom: 1px solid rgba(170, 170, 170, 0.185);
+     }
+
+     .nav-link{
+        color: #57585A;
+     }
+
+     .nav-menu.active{
+         left: 0;
+     }.hamburguer{
+       display: block;
+   }
+   .hamburguer.active .bar:nth-child(2){
+       opacity: 0;
+   }
+   .hamburguer.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+    }
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: #fffffff6;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+
+    .informacoes-iniciais{
+        background-image: none;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .info-text > h1 {
+        margin-top: 10px;
+        font-size: 28px;
+    }
+
+    .info-text > p {
+        margin: 10px 5em 20px;
+    }
+}
+
+@media only screen and (max-width: 530px){
+    .info-text > h1 {
+        margin-top: 15px;
+        font-size: 24px;
+    }
+
+    .info-text > p {
+        margin: 10px 2em 20px;
+    }
+
+    .informacoes-iniciais > .button{
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    header{
+        gap: 10px;
+        padding: 0 20px;
+    }
+
+    .redes > a > img{
+        height: 15px;
+        width: 15px;
+        margin: 0 3px;
+    }
+
+    .info-text > h1 {
+        margin-top: 15px;
+        font-size: 18px;
+    }
+
+    .info-text > p {
+        margin: 10px 1em 20px;
+    }
+
+    .informacoes-iniciais > div > .info-text {
+        margin: 0 0 0 9em;
+    }
 }
