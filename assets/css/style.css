@@ -60,10 +60,12 @@ header > nav > ul > li > a{
     text-decoration: none;
 }
 
-.redes > a > img{
-    height: 20px;
-    width: 20px;
-    margin: 0 5px;
+.redes > a > ion-icon{
+    height: 18px;
+    width: 18px;
+    margin: 0 3px;
+    border-radius: 6px;
+    color: #313131;
 }
 
 /* MAIN */
@@ -72,7 +74,7 @@ header > nav > ul > li > a{
     background-image: url("painellogo.png");
     background-repeat: no-repeat;
     background-size:100%;
-    min-height: 510px;
+    min-height: 500px;
 }
 
 .informacoes-iniciais > .button{
@@ -135,6 +137,7 @@ header > nav > ul > li > a{
     .info-text > p {
         margin: 10px 35em 20px;
     }
+    
 }
 
 @media only screen and (max-width: 1550px) {
@@ -262,10 +265,8 @@ header > nav > ul > li > a{
         padding: 0 20px;
     }
 
-    .redes > a > img{
-        height: 15px;
-        width: 15px;
-        margin: 0 3px;
+    .redes > a > ion-icon{
+        margin: 0 1px;
     }
 
     .info-text > h1 {
