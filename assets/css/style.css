@@ -70,14 +70,11 @@ header > nav > ul > li > a{
 
 /* MAIN */
 
-.informacoes-iniciais{
-    background-image: url("painellogo.png");
-    background-repeat: no-repeat;
-    background-size:100%;
-    min-height: 500px;
+.infos{
+    position: absolute;
 }
 
-.informacoes-iniciais > .button{
+.infos > .button{
     display: flex;
     justify-content: center;
     margin: 0 0 0 20em;
@@ -133,6 +130,10 @@ header > nav > ul > li > a{
     text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
 }
 
+.painel > img{
+    width: 100%;
+    margin: 2em 0;
+}
 @media only screen and (max-width: 1800px) {
     .info-text > p {
         margin: 10px 35em 20px;
@@ -228,8 +229,13 @@ header > nav > ul > li > a{
         left: 0;
     }
 
-    .informacoes-iniciais{
-        background-image: none;
+    .painel > img{
+        display: none;
+    }
+
+    .infos{
+        position: initial;
+        margin-bottom: 3em;
     }
 }
 
@@ -254,7 +260,7 @@ header > nav > ul > li > a{
         margin: 10px 2em 20px;
     }
 
-    .informacoes-iniciais > .button{
+    .infos > .button{
         margin: 0;
     }
 }
@@ -278,7 +284,7 @@ header > nav > ul > li > a{
         margin: 10px 1em 20px;
     }
 
-    .informacoes-iniciais > div > .info-text {
+    .infos > div > .info-text {
         margin: 0 0 0 9em;
     }
 }
