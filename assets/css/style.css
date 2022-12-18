@@ -68,6 +68,10 @@ header > nav > ul > li > a{
     color: #313131;
 }
 
+ion-icon:hover {
+    opacity: 0.7;
+}
+
 /* MAIN */
 
 .infos{
@@ -134,6 +138,14 @@ header > nav > ul > li > a{
     width: 100%;
     margin: 2em 0;
 }
+
+/* FOOTER */
+
+.icon-whatsapp {
+    height: 70px;
+    width: 70px;
+}
+
 @media only screen and (max-width: 1800px) {
     .info-text > p {
         margin: 10px 35em 20px;
@@ -286,5 +298,12 @@ header > nav > ul > li > a{
 
     .infos > div > .info-text {
         margin: 0 0 0 9em;
+    }
+}
+
+@media only screen and (max-width: 341px) {
+
+    header {
+        margin: 0 15;
     }
 }
