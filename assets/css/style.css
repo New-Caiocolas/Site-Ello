@@ -46,6 +46,7 @@ header > div > a > img{
 .nav-menu {
     display: flex;
     justify-content: center;
+    z-index: 0;
 }
 
 header > nav > ul > li{
@@ -76,6 +77,7 @@ ion-icon:hover {
 
 .infos{
     position: absolute;
+    z-index: 4;
 }
 
 .infos > .button{
@@ -134,18 +136,22 @@ ion-icon:hover {
     text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
 }
 
-.painel > img{
+.painelimg {
     width: 100%;
     margin: 2em 0;
 }
 
+.slides{
+    display: flex;
+    justify-content: center;
+
+}
+
 .carousel-wrapper {
-    height: 400px;
+    height: 450px;
     position: relative;
     width: 800px;
-    display: block;
-    margin: 50px auto ;
-    border: 2px solid black;
+    margin-bottom: 50px;
   }
   
   .carousel-item {
@@ -159,11 +165,17 @@ ion-icon:hover {
     transition: all 0.5s ease-in-out;
   }
   .arrow{
-    border: solid black;
+    border: solid #0090D7;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 12px;
   }
+
+  .arrow:hover{
+    opacity: 0.5;
+  }
+
+
   .arrow-prev {
     left: 30px;
     position: absolute;
@@ -184,15 +196,15 @@ ion-icon:hover {
   .item-1 {
     z-index: 2;
     opacity: 1;
-    background: url('/assets/imgs/img1.jpg');
+    background: url('img1.jpg');
     background-size: cover;
   }
   .item-2 {
-    background: url('/assets/imgs/img2.jpg');
+    background: url('img2.jpg');
     background-size: cover;
   }
   .item-3 {
-    background: url('/assets/imgs/img3.jpg');
+    background: url('img3.jpg');
     background-size: cover;
   }
   
@@ -310,7 +322,7 @@ ion-icon:hover {
         left: 0;
     }
 
-    .painel > img{
+    .painelimg{
         display: none;
     }
 
@@ -329,6 +341,11 @@ ion-icon:hover {
     .info-text > p {
         margin: 10px 5em 20px;
     }
+
+    .carousel-wrapper {
+        height: 272.25px;
+        width: 484px;
+      }
 }
 
 @media only screen and (max-width: 530px){
@@ -344,6 +361,11 @@ ion-icon:hover {
     .infos > .button{
         margin: 0;
     }
+
+    .carousel-wrapper {
+        height: 225px;
+        width: 100%;
+      }
 }
 
 @media only screen and (max-width: 450px){
