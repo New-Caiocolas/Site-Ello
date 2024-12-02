@@ -76,8 +76,6 @@ ion-icon:hover {
 
 /* MAIN */
 
-
-
 .slide-info {
     display: flex;
     align-items: center;
@@ -263,6 +261,11 @@ ion-icon:hover {
         margin: 10px;
         font-size: 16px;
       }
+
+    .img-quem-somos {
+        width: 490px;
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 1030px) {
@@ -273,10 +276,6 @@ ion-icon:hover {
     }
 
     .container-images {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         width: 100vw;
         height: 100%;
       }
@@ -284,6 +283,12 @@ ion-icon:hover {
     .container-slider {
         margin: 200px 0;
         
+    }
+
+    .quem-somos {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
     }
 }
 
@@ -294,10 +299,36 @@ ion-icon:hover {
         justify-content: space-between;
         gap: 3em;
         padding: 0 2em;
+        position: relative;
+        z-index: 1000;
+    }
+
+    .slide-info {
+        padding: 0;
+        height: 56vh;
+    }
+
+    .container-images {
+        width: 100vw;
+        height: 100%;
+      }
+
+    .container-slider {
+        margin: 17vh 0;
+        
+    }
+
+    .infos{
+        margin: 0;
     }
 
     .navbar{
         position: fixed;
+    }
+
+    .container-slider {
+        position: relative; 
+        z-index: 1; 
     }
 
     .hamburguer{
@@ -384,6 +415,20 @@ ion-icon:hover {
     }
 }
 
+@media only screen and (max-width: 600px){
+    .container-slider {
+        margin: auto 0;
+        
+    }
+
+    .slide-info {
+        padding: 0;
+        height: 50vh;
+    }
+
+}
+
+
 @media only screen and (max-width: 530px){
     .info-text > h1 {
         margin-top: 15px;
@@ -396,6 +441,19 @@ ion-icon:hover {
 
     .infos > .button{
         margin: 0;
+    }
+
+    .img-quem-somos {
+        width: 420px;
+        height: auto;
+    }
+
+    .quem-somos {
+        margin: 0;
+    }
+
+    .quem-somos > div {
+        padding: 4px;
     }
 }
 
@@ -420,6 +478,19 @@ ion-icon:hover {
 
     .infos > div > .info-text {
         margin: 0 0 0 9em;
+    }
+
+    .infos {
+        margin: 0;
+    }
+
+    .quem-somos > div > h1 {
+        font-size: 54px;
+    }
+
+    .slide-info {
+        padding: 0;
+        height: 42vh;
     }
 }
 
