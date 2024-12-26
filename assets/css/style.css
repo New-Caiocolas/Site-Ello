@@ -198,8 +198,12 @@ ion-icon:hover {
   .prod {
     display: flex;
     background-color: #D9D9D9;
-    padding: 2em;
+    padding: 0 1em;
     height: 50vh;
+  }
+
+  .prod > div {
+    margin: 1em auto;
   }
 
   .card1 {
@@ -270,7 +274,7 @@ ion-icon:hover {
     .slide-info {
         flex-direction: column;
         padding: 10px 0px;
-        height: 60vh;
+        height: auto;
     }
 
     .container-images {
@@ -304,7 +308,6 @@ ion-icon:hover {
 
     .slide-info {
         padding: 0;
-        height: 56vh;
     }
 
     .container-images {
@@ -318,7 +321,7 @@ ion-icon:hover {
     }
 
     .infos{
-        margin: 0;
+        margin: 20px 0;
     }
 
     .navbar{
@@ -397,10 +400,6 @@ ion-icon:hover {
         display: none;
     }
 
-    .infos{
-        position: initial;
-        margin-bottom: 3em;
-    }
 
     .prod {
         flex-direction: column;
@@ -485,17 +484,33 @@ ion-icon:hover {
         margin: 0 0 0 9em;
     }
 
-    .infos {
-        margin: 0;
+    .infos{
+        margin-top: 20px;
     }
 
     .quem-somos > div > h1 {
-        font-size: 54px;
+        font-size: 50px;
+    }
+
+    .quem-somos > div > p {
+        font-size: 14px;
     }
 
     .slide-info {
         padding: 0;
-        height: 42vh;
+        
+    }
+
+    .img-quem-somos {
+        width: 300px;
+        height: auto;
+    }
+
+    .card1 {
+        width: 282px;
+        height: 355px;
+        padding: 16px;
+        background-color: #0094DA;
     }
 }
 
@@ -503,5 +518,13 @@ ion-icon:hover {
 
     header {
         margin: 0 15;
+    }
+
+
+    .card1 {
+        width: 232px;
+        height: 305px;
+        padding: 16px;
+        background-color: #0094DA;
     }
 }
