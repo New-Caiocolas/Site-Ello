@@ -381,7 +381,7 @@ ion-icon:hover {
     .nav-menu{
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 60px;
         gap: 0;
         border-radius: 0 0 20px 20px;
         background-color: #fffffff6;
