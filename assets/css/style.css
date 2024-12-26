@@ -130,9 +130,7 @@ ion-icon:hover {
     cursor: pointer;
   }
   
-  #prev-button {
-    
-  }
+  
 
   #prev-button:hover, #next-button:hover{
     background-color: #313131;
@@ -303,6 +301,7 @@ ion-icon:hover {
         z-index: 1000;
     }
 
+
     .slide-info {
         padding: 0;
         height: 56vh;
@@ -381,7 +380,7 @@ ion-icon:hover {
     .nav-menu{
         position: fixed;
         left: -100%;
-        top: 60px;
+        top: 62px;
         gap: 0;
         border-radius: 0 0 20px 20px;
         background-color: #fffffff6;
@@ -402,6 +401,12 @@ ion-icon:hover {
         position: initial;
         margin-bottom: 3em;
     }
+
+    .prod {
+        flex-direction: column;
+        height: auto;
+        height: auto;
+      }
 }
 
 @media only screen and (max-width: 700px){
